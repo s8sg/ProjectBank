@@ -1,0 +1,7 @@
+create table transactiondetails(
+tid varchar2(15),
+cid varchar2(15),
+from_acc_no varchar2(20),
+to_acc_no varchar2(30),
+tamount varchar2(15),
+tdate varchar2(30));

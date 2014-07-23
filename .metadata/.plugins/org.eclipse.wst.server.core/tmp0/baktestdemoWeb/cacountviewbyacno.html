@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled</title>
+<script type="text/javascript">
+function validate()
+{
+	var	x = document.getElementById("an").value;
+	if(x==null || x=="")
+	{
+	 alert("Account-No. must be filled out");
+	 return false;
+	}
+}
+function goBack()
+{
+	window.location="cviewaccount.html";
+}
+</script>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+/*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+DIV,UL,OL /* Left */
+{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+</style>
+
+</head>
+<body background="resource/images/Coins.jpg">
+<div id="text1" style="position:absolute; overflow:hidden; left:71px; top:34px; width:374px; height:52px; z-index:0">
+<div class="wpmd">
+<div><font color="#00003E" class="ws22" ><B>View by Acc.No: </B></font></div>
+<div><font color="#00003E" class="ws22" style="background-color:#FFFFFF;"><B><BR></B></font></div>
+</div></div>
+
+<div id="text2" style="position:absolute; overflow:hidden; left:70px; top:93px; width:150px; height:90px; z-index:1">
+<div class="wpmd">
+<div><font class="ws12"><B>Account No:</B></font></div>
+</div></div>
+
+<form name="form1" method="get" action="ViewAccountByAcNoCustomer" onsubmit="return validate()" style="margin:0px">
+<input name="acno" id="an" type="text" style="position:absolute;width:200px;left:177px;top:91px;z-index:3">
+<input name="id" type="hidden" value="c"> 
+<input  type="submit" value="OK" style="position:absolute;left:235px;top:195px;z-index:4">
+</form>
+<button name="formbutton2" onclick="goBack()" style="position:absolute;left:285px;top:196px;z-index:5">Cancel</button>
+</body>
+</html>

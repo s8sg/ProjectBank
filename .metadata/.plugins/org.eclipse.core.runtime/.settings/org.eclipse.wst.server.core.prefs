@@ -1,0 +1,4 @@
+#Fri Jul 06 16:52:27 IST 2012
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="JBoss v4.2" location\="D\:/st12-swkit/jee/jboss-4.2.1.GA/bin" name\="JBoss v4.2" runtime-type-id\="org.eclipse.jst.server.generic.runtime.jboss42" server_definition_id\="org.eclipse.jst.server.generic.runtime.jboss42" timestamp\="0">\r\n    <map key\="generic_server_instance_properties" serverRootDirectory\="D\:/st12-swkit/jee/jboss-4.2.1.GA"/>\r\n  </runtime>\r\n</runtimes>\r\n
+eclipse.preferences.version=1

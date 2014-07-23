@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled</title>
+<script type="text/javascript">
+function goBack()
+{
+window.location="managerhome.html";
+}
+function validate()
+{
+	var x = document.getElementById("fn").value;
+	if(x==null || x=="")
+	{
+	 alert("First Name must be filled out");
+	 return false;
+	}
+	
+	x = document.getElementById("ln").value;
+	if(x==null || x=="")
+	{
+	 alert("Last Name must be filled out");
+	 return false;
+	}
+
+	x= document.getElementById("em").value;
+	if(x==null || x=="")
+	{
+	 alert("mail id must be filled out");
+	 return false;
+	}
+
+	x= document.getElementById("dob").value;
+	if(x==null || x=="")
+	{
+	 alert("DOB must be filled out");
+	 return false;
+	}
+	
+	x= document.getElementById("ad").value;
+	if(x==null || x=="")
+	{
+	 alert("Address must be filled out");
+	 return false;
+	}
+
+	x= document.getElementById("ib").value;
+	if(x==null || x=="")
+	{
+	 alert("Initial Balence must be filled out");
+	 return false;
+	}
+
+	x= document.getElementById("pn").value;
+	if(x==null || x=="")
+	{
+	  document.getElementById("pn").value="unknown";
+	}
+
+}
+</script>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+/*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+DIV,UL,OL /* Left */
+{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+</style>
+
+</head>
+<body background="resource/images/Coins.jpg">
+<form name="form1" onsubmit="return validate()" method="get" action="CreateCustomer" >
+
+<input name="fname" id="fn" type="text" style="position:absolute;width:200px;left:303px;top:145px;z-index:1">
+<input name="lname" id="ln" type="text" style="position:absolute;width:200px;left:304px;top:187px;z-index:2">
+<input name="email" id="em" type="text" style="position:absolute;width:200px;left:304px;top:232px;z-index:3">
+<input name="pno" id="pn" type="text" style="position:absolute;width:200px;left:304px;top:269px;z-index:4">
+<input name="dob" id="dob" type="text" style="position:absolute;width:200px;left:304px;top:308px;z-index:5">
+<textarea name="addrs" id="ad" style="position:absolute;left:304px;top:341px;width:200px;height:56px;z-index:6"></textarea>
+<select name="acctype"  style="position:absolute;left:305px;top:412px;width:200px;z-index:7">
+	<option value="Current">Current</option>
+	<option value="Savings">Savings</option>
+	<option value="Fixed">Fixed</option>
+</select>
+<select name="branch" style="position:absolute;left:304px;top:454px;width:200px;z-index:8">
+	<option value="Kolkata">Kolkata</option>
+	<option value="Mumbai">Mumbai</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Delhi">Delhi</option>
+	<option value="Goa">Goa</option>
+</select>
+<input name="initbalance" id="ib" type="text" style="position:absolute;width:200px;left:302px;top:491px;z-index:9">
+<input type="submit" value="submit" style="position:absolute;left:370px;top:550px;z-index:19">
+</form>
+
+<button onclick="goBack()" style="position:absolute;left:432px;top:550px;z-index:20">Cancle</button>
+
+<div id="text1" style="position:absolute; overflow:hidden; left:176px; top:143px; width:150px; height:90px; z-index:10">
+<div class="wpmd">
+<div><font class="ws12">* First Name:</font></div>
+</div></div>
+
+<div id="text2" style="position:absolute; overflow:hidden; left:176px; top:185px; width:150px; height:90px; z-index:11">
+<div class="wpmd">
+<div><font class="ws12">* Last Name:</font></div>
+</div></div>
+
+<div id="text3" style="position:absolute; overflow:hidden; left:176px; top:233px; width:150px; height:90px; z-index:12">
+<div class="wpmd">
+<div><font class="ws12">* Email-id:</font></div>
+</div></div>
+
+<div id="text4" style="  position:absolute; overflow:hidden; left:186px; top:270px; width:150px; height:90px; z-index:13">
+<div class="wpmd">
+<div><font class="ws12">PhoneNo:</font></div>
+</div></div>
+
+<div id="text5" style="position:absolute; overflow:hidden; left:176px; top:312px; width:150px; height:90px; z-index:14">
+<div class="wpmd">
+<div><font class="ws12">* DOB:</font></div>
+</div></div>
+
+<div id="text6" style="position:absolute; overflow:hidden; left:176px; top:351px; width:150px; height:90px; z-index:15">
+<div class="wpmd">
+<div><font class="ws12">* Address:</font></div>
+</div></div>
+
+<div id="text7" style="position:absolute; overflow:hidden; left:176px; top:412px; width:150px; height:90px; z-index:16">
+<div class="wpmd">
+<div><font class="ws12">* Account-type:</font></div>
+</div></div>
+
+<div id="text8" style="position:absolute; overflow:hidden; left:176px; top:455px; width:150px; height:90px; z-index:17">
+<div class="wpmd">
+<div><font class="ws12">* Branch:</font></div>
+</div></div>
+
+<div id="text9" style="position:absolute; overflow:hidden; left:176px; top:490px; width:150px; height:90px; z-index:18">
+<div class="wpmd">
+<div><font class="ws12">* Initial Balance:</font></div>
+</div></div>
+
+<div id="text10" style="position:absolute; overflow:hidden; left:264px; top:30px; width:504px; height:43px; z-index:21">
+<div class="wpmd">
+<div><font class="ws22"><B>Create Customer</B></font></div>
+</div></div>
+
+</body>
+</html>

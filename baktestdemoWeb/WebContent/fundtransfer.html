@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled</title>
+<script type="text/javascript">
+function validate()
+{
+	var	x = document.getElementById("dan").value;
+	if(x==null || x=="")
+	{
+	 alert("Debit Account-No. must be filled out");
+	 return false;
+	}
+	x = document.getElementById("can").value;
+	if(x==null || x=="")
+	{
+	 alert("Credit Account-No. must be filled out");
+	 return false;
+	}
+	x = document.getElementById("amnt").value;
+	if(x==null || x=="")
+	{
+	 alert("Amount must be filled out");
+	 return false;
+	}
+}
+
+function goBack()
+{
+	window.location="customerhome.jsp";
+}
+</script>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+/*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+DIV,UL,OL /* Left */
+{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+</style>
+
+</head>
+<body background="resource/images/Coins.jpg">
+<div id="text1" style="position:absolute; overflow:hidden; left:78px; top:44px; width:247px; height:49px; z-index:0">
+<div class="wpmd">
+<div><font color="#00003E" class="ws22" ><B>Fund Transfer: </B></font></div>
+</div></div>
+
+<div id="text2" style="position:absolute; overflow:hidden; left:76px; top:120px; width:150px; height:35px; z-index:1">
+<div class="wpmd">
+<div><font class="ws12"><B>Debit Account No:</B></font></div>
+</div></div>
+
+<div id="text4" style="position:absolute; overflow:hidden; left:76px; top:190px; width:77px; height:46px; z-index:4">
+<div class="wpmd">
+<div><font class="ws12"><B>Amount:</B></font></div>
+</div></div>
+
+<form name="form1" method="get" action="FundTransfer" onsubmit="return validate()" style="margin:0px">
+<input name="dacno" id="dan"type="text" style="position:absolute;width:200px;left:228px;top:115px;z-index:5">
+<input name="cacno" id="can" type="text" style="position:absolute;width:200px;left:229px;top:153px;z-index:6">
+<input name="amount" id="amnt" type="text" style="position:absolute;width:200px;left:228px;top:187px;z-index:7">
+<input type="submit" value="Submit" style="position:absolute;left:240px;top:239px;z-index:8">
+<div id="text3" style="position:absolute; overflow:hidden; left:75px; top:155px; width:150px; height:27px; z-index:3">
+<div class="wpmd">
+<div><font class="ws12"><B>Credit Account No:</B></font></div>
+</div></div>
+</form>
+<button name="cancel" onclick="goBack()" style="position:absolute;left:312px;top:240px;z-index:9">Cancel</button>
+
+</body>
+</html>
